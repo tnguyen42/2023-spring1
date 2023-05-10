@@ -14,6 +14,7 @@ describe('Twitter tests', () => {
     });
 
     it('should have 1 tweet in the initial state', async () => {
+      console.log('my initial tweets', await twitter.getTweets());
       (await twitter.getTweets()).length.should.equal(1);
     });
 
